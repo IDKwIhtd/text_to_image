@@ -41,5 +41,5 @@ if st.button("전송"):
             quality="standard",
             n=1,
         )
-    st.write(chat_completion.choices[0].message.content)
     st.image(response.data[0].url)
+    st.write(chat_completion.choices[0].message.content)
